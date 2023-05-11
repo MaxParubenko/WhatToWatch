@@ -42,10 +42,8 @@ INSTALLED_APPS = [
     'embed_video',
     'ckeditor',
     'ckeditor_uploader',
-    'django_non_dark_admin',
 ]
 
-DISABLE_DARK_MODE = True
 
 LOGIN_REDIRECT_URL = 'index'
 LOGIN_URL = 'login'
