@@ -1,0 +1,19 @@
+{%extends 'include/base.html'%}
+{% load static %}
+{%block style%}
+<link rel="stylesheet" href="{%static 'films/css/index.css'%}">
+{%endblock%}
+{%block content%}
+<h3 id="title_film_list">Підборка фільмів, які можна подивитись</h3>
+<div class="films">
+  {% for movie in movies%}
+  <div class="cards">
+    <a href="{{movie.get_absolute_url}}" class="filmlink">
+      <img class='poster_films' src="{{movie.poster.url}}" alt="">
+      <p class="title_film">"{{movie.title}}"</p>
+    </a>
+  </div>
+  {%endfor%}
+</div>
+{% include 'include/pagination.html' %}
+{%endblock%}

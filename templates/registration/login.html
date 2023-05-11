@@ -1,0 +1,27 @@
+{% extends 'include/base.html'%}
+{%load static%}
+{%block style%}
+<link rel="stylesheet" href="{%static 'films/css/login.css'%}">
+{%endblock%}
+{% block content%}
+<h1>Вхід в акаунт</h1>
+<div class="mb-3"> 
+    <form action="{%url 'login'%}" method="post">
+        {%csrf_token%}
+        <p>
+            Нікнейм: {{form.username}} 
+        </p> 
+        <p>
+            Пароль: {{form.password}} 
+        </p> 
+        <input type="submit" value='Увійти'class="btn btn-primary">
+    </form>
+    <div class="login_source">
+        <span style="color:black">Новачок?</span>
+        <a href="{%url 'register'%}">
+            Зареєструватись
+        </a>
+    </div>
+</div>
+
+{%endblock%}

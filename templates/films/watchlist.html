@@ -1,0 +1,23 @@
+{%extends 'include/base.html'%}
+{% load static %}
+{%block style%}
+<link rel="stylesheet" href="{%static 'films/css/index.css'%}">
+{%endblock%}
+{%block content%}
+{% if watchlist %}
+<h3 id="title_film_list">Ваші обрані фільми</h3>
+<div class="films">
+    {% for movie in movies%}
+    <div class="cards">
+      <a href="{{movie.get_absolute_url}}" class="filmlink">
+        <img class='poster_films' src="{{movie.poster.url}}" alt="">
+        <p class="title_film">"{{movie.title}}"</p>
+      </a>
+    </div>
+    {%endfor%}
+  </div>
+{%include 'include/pagination.html'%}
+{% else %}
+<h3 id="title_film_list">У вас немає обраних фільмів</h3></p>
+{% endif %}
+{%endblock%}

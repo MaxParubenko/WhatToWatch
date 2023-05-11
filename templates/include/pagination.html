@@ -1,0 +1,48 @@
+<style>
+    .pagination_bar{
+    margin-top: 50px;
+
+}
+
+.page-item{
+    padding-left: 2px;
+}
+</style>
+
+<nav class='pagination_bar' aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      {% if movies.has_previous %}
+      <li class="page-item "><a class="page-link" href="?page=1">First</a></li>
+      <li class="page-item">
+        <a class="page-link" href="?page={{ movies.previous_page_number }}" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      {%endif%}
+      {%if paginator.page_range|length > 1%}
+          {%for i in paginator.page_range %}
+              {%if i == movies.number %}
+                  <li class="page-item active">
+                    <a class="page-link " href="#">{{i}}</a>
+                  </li>
+              {% elif i > movies.number|add:'-3' and i < movies.number|add:'3' %}
+                  <li class="page-item">
+                    <a class="page-link" href="?page={{i}}">{{i}}</a>
+                  </li>
+              {%endif%}
+          {%endfor%}
+      {%endif%}
+      {% if movies.has_next %}
+      <li class="page-item">
+        <a class="page-link" href="?page={{ movies.next_page_number }}" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="?page={{ movies.paginator.num_pages}}" aria-label="Last">
+          <span aria-hidden="true">Last</span>
+        </a>
+      </li>
+      {%endif%}
+    </ul>
+  </nav>

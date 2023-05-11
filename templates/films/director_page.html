@@ -1,0 +1,31 @@
+{%extends 'include/base.html'%}
+{%load static%}
+{% load embed_video_tags %}
+{% block title %}
+{{director.name}}
+{% endblock title %}
+{%block style%}
+<link rel="stylesheet" href="{%static 'films/css/director_page.css'%}">
+{%endblock%}
+{%block content%}
+<div class="film">
+    <h1 class="title">{{director.name}}</h1>
+    <img class="film_poster" src="{{director.photo.url}}" width="250" height="350" alt="">
+</div>
+<h3 class="actor_title">
+    Фільми, які режисував
+</h3>
+<div class="actors">
+    {%for m in movie.all%}
+    <div class="cards">
+        <a href="{{m.get_absolute_url}}" class="filmlink">
+            <img class='actor_card' src="{{m.poster.url}}" alt="">
+            <p class="actor_name">{{m.title}}</p>
+        </a>
+    </div>
+    {%endfor%}
+</div>
+
+ 
+
+{%endblock%}

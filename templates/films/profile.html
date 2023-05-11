@@ -1,0 +1,34 @@
+{% extends 'include/base.html' %}
+{%load static%}
+{%block style%}
+<link rel="stylesheet" href="{%static 'films/css/register.css'%}">
+{%endblock%}
+{% block content %}
+<h1>Мій профіль</h1>
+<div class="mb-3"> 
+  <h3 style="color:black; margin-bottom: 15px;">Редагування профілю</h3>
+    <form method="post">
+        {% csrf_token %}
+        <p>
+          Нікнейм: {{form.username}} 
+      </p> 
+      <p>
+          Ел.пошта: {{form.email}} 
+      </p> 
+      <p>
+          Пароль: {{form.old_password}} 
+      </p> 
+      <p>
+         Новий Пароль: {{form.new_password1}} 
+      </p> 
+      <p>
+          Підтвердження нового паролю: {{form.new_password2}} 
+      </p> 
+        <button type="submit" class="btn btn-success">Змінити дані</button>
+    </form> 
+    <br>
+    
+</div>
+
+
+{% endblock %}
