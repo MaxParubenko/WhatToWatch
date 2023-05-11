@@ -1,0 +1,118 @@
+.actors {
+    text-align: center;
+    margin: auto;
+    margin-left: 50px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+
+
+.film {
+    text-align: center;
+    margin: auto;
+    height: 350px;
+    width: 1000px;
+    
+}
+
+
+.film_poster{
+    margin-top: 20px;
+}
+
+
+.actor_card {
+    height: 200px;
+    width: 150px;
+}
+
+
+.title {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+.cards {
+    padding: 15px;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    height: 250px;
+    width: 166px;
+
+}
+
+.cards:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.filmlink {
+    text-decoration: none;
+}
+
+.filmlink:hover {
+    text-decoration: underline white;
+
+}
+
+.actor_name {
+    margin-top: 10px;
+    color: white;
+    font-style: none;
+}
+
+.actor_title{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+#reviews{
+    margin: auto;
+   width: 1000px;
+   height: auto;
+   margin-top: 50px;
+   justify-content: center;
+   border: 2px solid;
+   border-radius: 20px;
+   padding-left: 20px;
+   padding-top: 10px;
+   padding-bottom: 20px;
+}
+
+.users_comments{
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 955px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: -20px;
+}
+
+.answer_on_comment{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 905px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+#answer_button:hover{
+    text-decoration: none;
+}
+
+

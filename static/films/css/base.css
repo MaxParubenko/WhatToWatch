@@ -1,0 +1,20 @@
+
+/* navbar settings */
+#navbarDropdown{
+    justify-content: end;
+    margin-right: 30px;
+}
+
+
+.dropdown-menu {
+    width: auto;
+}
+
+div.dropdown-multicol2{
+    width: 30em;
+  }
+div.dropdown-multicol2>div.dropdown-col{
+    display:inline-block;
+    width: 22%;
+    margin-right: 10px;
+  }

@@ -1,0 +1,200 @@
+.actors {
+    text-align: center;
+    margin: auto;
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.director{
+    text-align: center;
+    margin: auto;
+    height: 220px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.film {
+    text-align: center;
+    margin: auto;
+    height: 350px;
+    width: 1000px;
+    
+}
+
+.desc{
+    text-align: center;
+    margin: auto;
+    height: auto;
+    width: 1000px;
+    margin-top: 20px;
+}
+
+.film_poster,iframe{
+    margin-top: 20px;
+    float: left;
+}
+
+.trailer {
+    text-align: center;
+    margin: auto;
+    height: 360px;
+    width: 760px;
+}
+
+.film_poster_div{
+    height: 360px;
+    width: 260px;
+}
+
+.poster_and_trailer{
+    width: 1000px;
+    height: 360;
+    display: inline-block;
+}
+
+.actor_card {
+    height: 200px;
+    width: 150px;
+
+}
+
+
+.title {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+.description {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.cards {
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 250px;
+    width: 166px;
+
+}
+
+.watchlist{
+    text-align: center;
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.cards:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.filmlink {
+    text-decoration: none;
+}
+
+.filmlink:hover {
+    text-decoration: underline white;
+
+}
+
+.actor_name {
+    margin-top: 10px;
+    color: white;
+    font-style: none;
+}
+
+.actor_title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#reviews{
+    margin: auto;
+   width: 1000px;
+   height: auto;
+   margin-top: 50px;
+   justify-content: center;
+   border: 2px solid;
+   border-radius: 20px;
+   padding-left: 20px;
+   padding-top: 10px;
+   padding-bottom: 20px;
+}
+
+.users_comments{
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 955px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: -20px;
+}
+
+.answer_on_comment{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 905px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+#answer_button:hover{
+    text-decoration: none;
+}
+
+
+.rating {
+    overflow: hidden;
+    vertical-align: bottom;
+    display: inline-block;
+    width: 155px;
+    height: 30px;
+}
+
+.rating > input {
+    opacity: 0;
+    margin-right: -100%;
+}
+
+.rating > label {
+    position: relative;
+    display: block;
+    float: right;
+    background: url('../img/star-off-big.png');
+    background-size: 30px 30px;
+}
+
+.rating > label:before {
+    display: block;
+    opacity: 0;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url('../img/star-on-big.png');
+    background-size: 30px 30px;
+    transition: opacity 0.2s linear;
+}
+
+.rating > label:hover:before, .rating > label:hover ~ label:before, .rating:not(:hover) > :checked ~ label:before {
+    opacity: 1;
+}

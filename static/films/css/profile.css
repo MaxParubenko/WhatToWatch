@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+
+/* navbar settings */
+#navbarDropdown{
+    justify-content: end;
+    margin-right: 30px;
+}
+
+#dropdown_menu{
+    width: 100%;
+}
+
+.flagua{
+    display: inline-block;
+    justify-content: end;
+    width: 50px;
+    height: 30px;
+}
+
+/* ----------------- */
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.settings{
+    height: 600px;
+    width: 1000px;
+    background-color: rgb(155, 154, 154);
+    margin: auto;
+    border-radius: 20px;
+
+}
+
+.col1{
+margin-top: 50px;
+  margin-left: 50px;
+  float: left;
+}
+    .nickname{
+        height: 50px;
+        width: 200px;
+        background-color: white ;
+        border-radius: 10px;
+        
+    }
+
+
+.col2{
+        margin-top: 50px;
+          margin-left: 50px;
+          float: left;
+        }
+        .telephone{
+            height: 50px;
+        width: 200px;
+        background-color: white ;
+        border-radius: 10px;
+        
+        }
+
+
+.col3{
+            margin-top: 50px;
+              margin-left: 50px;
+              float: left;
+            }
+        .mail{
+            height: 50px;
+        width: 200px;
+        background-color: white ;
+        border-radius: 10px;
+        
+        }

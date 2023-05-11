@@ -1,0 +1,54 @@
+#title_film_list{
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 50px;
+} 
+
+.films{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    height: 600px;
+    
+    
+}
+
+.poster_films{
+    height: 200px;
+    width: 133px;
+}
+
+
+.cards{
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    height: 250px;
+    width: 166px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+    
+}
+
+        .cards:hover{
+            transition: 0.5s;
+            transform: scale(1.1);
+        }
+
+.filmlink{
+    text-decoration: none;
+}
+        .filmlink:hover{
+            text-decoration: underline white;
+            
+        }
+
+.title_film{
+    margin-top: 10px;
+    color: white;
+    font-style: none;
+}
+
+
